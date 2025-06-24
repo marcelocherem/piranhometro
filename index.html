@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>piranha's arrival</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <h1>Faltam</h1>
-    <div class="contador" id="contador"></div>
-    <h1>para o reencontro das piranhas</h1>
-    <script src="assets/js/script.js"></script>
 
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Faltam</h1>
+        <!-- Seção da contagem regressiva -->
+        <div class="countdown-container">
+            <div class="countdown-box">
+                <span id="days">00</span>
+                <small>Dias</small>
+            </div>
+            <div class="countdown-box">
+                <span id="hours">00</span>
+                <small>Horas</small>
+            </div>
+            <div class="countdown-box">
+                <span id="minutes">00</span>
+                <small>Minutos</small>
+            </div>
+            <div class="countdown-box">
+                <span id="seconds">00</span>
+                <small>Segundos</small>
+            </div>
+        </div>
+        <h1 style="text-align: center;">para o reencontro das piranhas</h1>
+    </div>
+    <div class="linepiranha">
+        <!-- Seção da timeline com bandeiras e peixinho -->
+        <div class="timeline-container">
+            <div class="dotted-line"></div>
+            <img src="assets/img/brazil-.png" alt="Bandeira do Brasil" class="flag brazil">
+            <img src="assets/img/italy.png" alt="Bandeira da Itália" class="flag italy">
+            <img src="assets/img/karina.png" alt="Peixinho" class="fish" id="fish">
+        </div>
+    </div>
+
+
+
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>

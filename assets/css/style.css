@@ -1,43 +1,98 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+    background-color: #2E2E3E;
+    color: white;
+    width: 100%;
+}
+.container {
+    width: 100%;
+    height: calc(100vh - 150px);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+    color: black;
+}
+
+.countdown-box {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-color: #f8f8f8;
+    border: 2px solid #ccc;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    border-radius: 8px;
+}
+
+.linepiranha {
     width: 100%;
-    height: 100vh;;
-    background-color: black;
-    color: red;
-}
-h1 {
-    font-size: 80px;
-    margin: 0 20px;
+    height: 150px;
 }
 
-.contador {
-    font-size: 80px;
+.timeline-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    height: 120px;
 }
 
-@media (max-width: 600px) {
-    h1, .contador {
-        font-size: 60px;
+.dotted-line {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    border-bottom: 6px dashed #fFFFFF;
+    border-bottom: ;
+    transform: translateY(-50%);
+}
+
+.flag {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.flag.brazil {
+    left: -15px;
+}
+
+.flag.italy {
+    right: -15px;
+}
+
+.fish {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: calc(50% - 20px);
+    transition: left 1s ease;
+    animation: floating 3s ease-in-out infinite;
+}
+@keyframes floating {
+    0% {
+      transform: translateY(-5px);
     }
-}
-
-@media (max-width: 430px) {
-    body {margin-top: -40px;}
-    h1, .contador {
-        font-size: 50px;
+    50% {
+      transform: translateY(5px);
     }
-}
-
-@media (max-width: 350px) {
-    h1, .contador {
-        font-size: 40px;
+    100% {
+      transform: translateY(-5px);
     }
-}
+  }
